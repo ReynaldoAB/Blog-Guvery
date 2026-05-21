@@ -13,7 +13,7 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
 
 export default function MonthlySalesChart() {
   const options: ApexOptions = {
-    colors: ["#465fff"],
+    colors: ["#16b37e"],
     chart: {
       fontFamily: "Outfit, sans-serif",
       type: "bar",

@@ -16,7 +16,7 @@ export default function LineChartOne() {
       position: "top",
       horizontalAlign: "left",
     },
-    colors: ["#465FFF", "#9CB9FF"], // Define line colors
+    colors: ["#16B37E", "#74D7B0"], // Define line colors
     chart: {
       fontFamily: "Outfit, sans-serif",
       height: 310,
@@ -39,7 +39,7 @@ export default function LineChartOne() {
     },
     markers: {
       size: 0, // Size of the marker points
-      strokeColors: "#fff", // Marker border color
+      strokeColors: "#ffffff", // Marker border color
       strokeWidth: 2,
       hover: {
         size: 6, // Marker size on hover
@@ -96,7 +96,7 @@ export default function LineChartOne() {
       labels: {
         style: {
           fontSize: "12px", // Adjust font size for y-axis labels
-          colors: ["#6B7280"], // Color of the labels
+          colors: ["#667085"], // Color of the labels
         },
       },
       title: {

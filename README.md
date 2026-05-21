@@ -74,6 +74,36 @@ git clone https://github.com/TailAdmin/free-nextjs-admin-dashboard.git
    yarn dev
    ```
 
+## Temporary Admin Bootstrap Endpoint
+
+This project includes a temporary endpoint to create an initial administrator user:
+
+- Endpoint: `POST /api/auth/bootstrap-admin`
+- Admin email: `admin@admin.com`
+- Admin password: `123456` (stored hashed in database)
+
+To enable and protect it, configure these environment variables:
+
+```env
+ENABLE_ADMIN_BOOTSTRAP=true
+ADMIN_BOOTSTRAP_TOKEN=your-very-strong-random-token
+```
+
+Call the endpoint including header `x-bootstrap-token` with the same token value.
+
+Example:
+
+```bash
+curl -X POST http://localhost:3000/api/auth/bootstrap-admin \
+   -H "x-bootstrap-token: your-very-strong-random-token"
+```
+
+After creating the initial admin, disable this endpoint immediately:
+
+```env
+ENABLE_ADMIN_BOOTSTRAP=false
+```
+
 ## Components
 
 TailAdmin is a pre-designed starting point for building a web-based dashboard using Next.js and Tailwind CSS. The template includes:
