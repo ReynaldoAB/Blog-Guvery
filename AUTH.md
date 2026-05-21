@@ -8,11 +8,13 @@ Sistema de registro e inicio de sesión integrado con base de datos PostgreSQL e
 
 ### Variables de Entorno
 
-El archivo `.env` ya contiene la cadena de conexión a Neon:
+El archivo `.env` local debe contener la cadena de conexión a Neon. No subas ese archivo al repositorio:
 
 ```env
-DATABASE_URL="postgresql://usuario:password@host-de-neon.aws.neon.tech/neondb?sslmode=require"
+DATABASE_URL="postgresql://USER:PASSWORD@HOST/DATABASE?sslmode=require&channel_binding=require"
 ```
+
+Usa tu URL real solo en `.env` o en las variables de entorno del despliegue.
 
 ## API Endpoints
 
