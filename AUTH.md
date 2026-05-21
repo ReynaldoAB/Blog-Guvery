@@ -10,6 +10,8 @@ Sistema de registro e inicio de sesión integrado con base de datos PostgreSQL e
 
 El archivo `.env` local debe contener la cadena de conexión a Neon. No subas ese archivo al repositorio:
 
+Nota: usa una cadena real solo en tu entorno local o en las variables de entorno del despliegue.
+
 ```env
 DATABASE_URL="postgresql://USER:PASSWORD@HOST/DATABASE?sslmode=require&channel_binding=require"
 ```

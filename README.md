@@ -66,7 +66,14 @@ git clone https://github.com/TailAdmin/free-nextjs-admin-dashboard.git
 
    > Use `--legacy-peer-deps` flag if you face peer-dependency error during installation.
 
-2. Start the development server:
+2. Configure environment variables:
+
+   - Copy `.env.example` to `.env`.
+   - Fill in your own `DATABASE_URL`, `JWT_SECRET`, and OAuth values locally.
+   - Never commit `.env` or `.env.local` to Git.
+   - Use real secrets only in your local environment or deployment variables.
+
+3. Start the development server:
 
    ```bash
    npm run dev
